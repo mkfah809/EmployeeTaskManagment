@@ -1,0 +1,15 @@
+<form (ngSubmit)="saveTask()">
+  <div>
+    <label for="taskName">Task Name:</label>
+    <input id="taskName" [(ngModel)]="task.taskName" name="taskName" required>
+  </div>
+  <div>
+    <label for="taskDescription">Task Description:</label>
+    <input id="taskDescription" [(ngModel)]="task.taskDescription" name="taskDescription" required>
+  </div>
+  <div>
+    <label for="taskStatus">Task Status:</label>
+    <input id="taskStatus" [(ngModel)]="task.taskStatus" name="taskStatus" required>
+  </div>
+  <button type="submit">{{ isUpdate ? 'Update' : 'Create' }}</button>
+</form>

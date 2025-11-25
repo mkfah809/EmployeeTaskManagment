@@ -1,0 +1,19 @@
+<table>
+    <thead>
+      <tr>
+        <th>Task Name</th>
+        <th>Task Description</th>
+        <th>Task Status</th>
+        <th>Created Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of tasks">
+        <td>{{ task.taskName }}</td>
+        <td>{{ task.taskDescription }}</td>
+        <td>{{ task.taskStatus }}</td>
+        <td>{{ task.dateTime | date}</td>
+      </tr>
+    </tbody>
+  </table>
+  
